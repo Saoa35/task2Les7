@@ -6,7 +6,7 @@ class Header extends Component {
 
         return(
             <header>
-                header 
+                You have {this.props.tasksCount} Todos 
             </header>
         )
     }
