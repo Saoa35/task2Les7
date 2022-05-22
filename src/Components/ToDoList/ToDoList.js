@@ -16,7 +16,8 @@ class ToDoList extends Component {
     handleAddTodo(value) {
 
         this.setState({
-            tasks: value
+            // tasks: [...this.state.tasks, value]
+            tasks: this.state.tasks.concat(value)
         })
     }
 
