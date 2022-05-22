@@ -2,16 +2,16 @@
 
 import React, { Component } from "react";
 
-class Header extends Component {
+class SubmitForm extends Component {
 
     render() {
 
         return(
-            <header>
-                You have Todos 
-            </header>
+            <form>
+                <input type/>
+            </form>
         )
     }
 }
 
-export default Header;
+export default SubmitForm;
