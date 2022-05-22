@@ -12,9 +12,19 @@ const MyComponents = {
     }
 }
 
+
+const components = {
+    comp1: () => <h4>render SMALL component 1</h4>,
+    comp2: MyComponents.Comp2
+}
+
+
 export default class ComponentRender extends Component {
 
     render() {
+
+        const Component1 = components.comp1;
+        const Component2 = components.comp2;
 
         return(
             <div>
@@ -22,8 +32,11 @@ export default class ComponentRender extends Component {
                 ComponentRender
                 </h2>
 
-                <MyComponents.Comp1/>
-                <MyComponents.Comp2 name='Alexandr'/>
+                {/* <MyComponents.Comp1/>
+                <MyComponents.Comp2 name='Alexandr'/> */}
+
+                <Component1/>
+                <Component2 name='Alex'/>
 
             </div>
         )
